@@ -1,0 +1,29 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "A simple TypeScript calculator library with CLI",
+  "main": "dist/calculator.js",
+  "type": "module",
+  "bin": {
+    "calc": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "cli": "node dist/cli.js"
+  },
+  "keywords": [
+    "calculator",
+    "typescript",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@vitest/coverage-v8": "^1.6.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
